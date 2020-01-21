@@ -8,4 +8,25 @@
     <string name="text_mainactivity">MainActivity</string>
     <string name="text_back">Back</string>
     <string name="text_secondaryactivity">SecondaryActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_description">Movie Description</string>
+    <string name="movie_directors">Movie Directors</string>
+    <string name="movie_star_actors">Movie Star Actors</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="directors">Directors</string>
+    <string name="star_actors">Star Actors</string>
+
+    <string name="text_launch_dialog">launch dialog</string>
+    <string name="text_title_of_dialog">Title of Dialog</string>
+    <string name="text_some_information">This dialog is displaying some information.</string>
+    <string name="text_ok">OK</string>
+    <string name="text_capture_input">Enter your name</string>
+    <string name="text_enter_name">Enter your name</string>
+
+    <string name="text_movie_title">Movie Title</string>
+    <string name="test_movie_description">This is a description of the movie.</string>
+    <string name="text_list_movie_directors">Directors</string>
+    <string name="text_list_movie_star_actors">Star Actors</string>
 </resources>
