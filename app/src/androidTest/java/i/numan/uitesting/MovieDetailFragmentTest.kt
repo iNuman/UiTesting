@@ -11,6 +11,7 @@ import com.bumptech.glide.request.RequestOptions
 import i.numan.uitesting.data.Movie
 import i.numan.uitesting.data.source.MoviesRemoteDataSource
 import i.numan.uitesting.factory.MovieFragmentFactory
+import i.numan.uitesting.main.MovieDetailFragment
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test

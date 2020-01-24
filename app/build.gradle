@@ -39,6 +39,7 @@ dependencies {
     // Espresso
     def androidx_test_espresso = "3.2.0"
 
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso"
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$androidx_test_espresso"
     androidTestImplementation "androidx.test.espresso:espresso-intents:$androidx_test_espresso"
@@ -69,6 +70,14 @@ dependencies {
     implementation "com.afollestad.material-dialogs:core:$matieral_dialogs_version"
     // for input
     implementation "com.afollestad.material-dialogs:input:$matieral_dialogs_version"
+
+    // Recyclerview
+    def recyclerview_version = "1.1.0"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
+
+    // Card View
+    def cardview_version = "1.0.0"
+    implementation "androidx.cardview:cardview:$cardview_version"
     testImplementation 'junit:junit:4.12'
 
 }

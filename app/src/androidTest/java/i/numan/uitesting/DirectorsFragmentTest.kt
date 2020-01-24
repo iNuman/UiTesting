@@ -8,6 +8,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import i.numan.uitesting.factory.MovieFragmentFactory
+import i.numan.uitesting.main.DirectorsFragment
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
