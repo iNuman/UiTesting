@@ -1,20 +1,27 @@
 package i.numan.uitesting.main
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.request.RequestOptions
 import i.numan.uitesting.R
 import i.numan.uitesting.data.source.MoviesDataSource
 import i.numan.uitesting.data.source.MoviesRemoteDataSource
 import i.numan.uitesting.factory.MovieFragmentFactory
-
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 const val REQUEST_IMAGE_CAPTURE = 1234
 const val KEY_IMAGE_DATA = "data" // retrieving data from intent
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),UICommunicationListener {
 
+    override fun loading(isLoading: Boolean) {
+        if (isLoading)
+            progress_bar.visibility = View.VISIBLE
+        else
+            progress_bar.visibility = View.INVISIBLE
+    }
     // dependencies (typically would be injected with dagger)
     lateinit var requestOptions: RequestOptions
     lateinit var moviesDataSource: MoviesDataSource
@@ -54,4 +61,6 @@ class MainActivity : AppCompatActivity() {
             moviesDataSource = MoviesRemoteDataSource()
         }
     }
+
+
 }
