@@ -13,6 +13,7 @@ import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import i.numan.uitesting.R
 import i.numan.uitesting.adapter.MoviesListAdapter.MovieViewHolder
 import i.numan.uitesting.data.FakeMovieData
+import i.numan.uitesting.espressoIdling_resource.EspressoIdlingResourcesRule
 import i.numan.uitesting.utils.EspressoIdlingResources
 import org.hamcrest.Matchers.not
 import org.junit.*
@@ -31,14 +32,17 @@ class MovieListFragmentTest {
     @get: Rule
     val activityScenario = ActivityScenarioRule(MainActivity::class.java)
 
-    @Before
-    fun registerIdlingResource() {
-        IdlingRegistry.getInstance().register(EspressoIdlingResources.countingIdlingResource)
-    }
-    @After
-    fun unregisterIdlingResource() {
-        IdlingRegistry.getInstance().unregister(EspressoIdlingResources.countingIdlingResource)
-    }
+    @get: Rule
+    val espressoIdlingResource = EspressoIdlingResourcesRule()
+    // instead of these we can use our custom test rules like above
+//    @Before
+//    fun registerIdlingResource() {
+//        IdlingRegistry.getInstance().register(EspressoIdlingResources.countingIdlingResource)
+//    }
+//    @After
+//    fun unregisterIdlingResource() {
+//        IdlingRegistry.getInstance().unregister(EspressoIdlingResources.countingIdlingResource)
+//    }
 
     //    Recyclerview comes into view
     @Test
