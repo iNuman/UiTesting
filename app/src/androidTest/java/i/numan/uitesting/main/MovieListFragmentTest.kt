@@ -13,7 +13,7 @@ import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import i.numan.uitesting.R
 import i.numan.uitesting.adapter.MoviesListAdapter.MovieViewHolder
 import i.numan.uitesting.data.FakeMovieData
-import i.numan.uitesting.util.EspressoIdlingResources
+import i.numan.uitesting.utils.EspressoIdlingResources
 import org.hamcrest.Matchers.not
 import org.junit.*
 import org.junit.runner.RunWith

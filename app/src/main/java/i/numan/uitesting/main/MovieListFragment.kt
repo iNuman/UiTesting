@@ -16,7 +16,7 @@ import i.numan.uitesting.adapter.MoviesListAdapter
 import i.numan.uitesting.data.FakeMovieData.FAKE_NETWORK_DELAY
 import i.numan.uitesting.data.Movie
 import i.numan.uitesting.data.source.MoviesDataSource
-import i.numan.uitesting.util.EspressoIdlingResources
+import i.numan.uitesting.utils.EspressoIdlingResources
 import kotlinx.android.synthetic.main.fragment_movie_list.*
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.Dispatchers.Main

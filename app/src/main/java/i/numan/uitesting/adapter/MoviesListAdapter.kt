@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.DiffUtil
 import com.bumptech.glide.Glide
 import i.numan.uitesting.R
 import i.numan.uitesting.data.Movie
-import i.numan.uitesting.util.EspressoIdlingResources
+import i.numan.uitesting.utils.EspressoIdlingResources
 import kotlinx.android.synthetic.main.layout_movie_list_item.view.*
 
 

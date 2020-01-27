@@ -1,4 +1,4 @@
-package i.numan.uitesting.util
+package i.numan.uitesting.utils
 
 import androidx.test.espresso.idling.CountingIdlingResource
 
